@@ -1,7 +1,7 @@
 # Deep_Image_Prior_Pytorch
 This repository provides the code for training deep image prior networks for image denoising with pytorch.  
 Deep Image Prior Networks works on few-shot and one-shot denoising principles, i.e. it does not require datasets to train for separating noise from images.  
-The implementation is based on the paper (Deep Image Prior)[https://arxiv.org/abs/1711.10925] by Ulyanov et al.  
+The implementation is based on the paper [Deep Image Prior](https://arxiv.org/abs/1711.10925) by Ulyanov et al.  
 The network first reconstructs the target image from random intialized noisy image. The network then computes the loss between reconstructed and original noisy image to update the network. Post some iterations, the network will start enhancing/denoising the image in contrast to the original one. The phenomenon is observed as the network is optimized to withhold the prior information from the image, hence the name, deep image prior. Iteration wise results from the code are shown below.  
 
 Iteration # 100  
